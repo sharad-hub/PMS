@@ -172,7 +172,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProjectController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RoleController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RoleGroupController.cs" />
     <Compile Include="Areas\Admin\Controllers\TaskController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TaskStatusController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TaskTypeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -255,6 +260,11 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\Project\" />
+    <Folder Include="Areas\Admin\Views\RoleGroup\" />
+    <Folder Include="Areas\Admin\Views\Role\" />
+    <Folder Include="Areas\Admin\Views\TaskStatus\" />
+    <Folder Include="Areas\Admin\Views\TaskType\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

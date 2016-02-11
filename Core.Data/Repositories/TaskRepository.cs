@@ -24,7 +24,7 @@ namespace Core.Data.Repositories
         public override void Update(Tasks entity)
         {
             entity.UpdatedOn = DateTime.Now;
-            entity.UpdatedBy = entity.UpdatedBy;
+            entity.ModifiedBy = entity.ModifiedBy;
             base.Update(entity);
         }
     }

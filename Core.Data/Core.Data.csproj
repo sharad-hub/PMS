@@ -76,6 +76,14 @@
     <Compile Include="Migrations\201602100826344_Added TaskStatus added.Designer.cs">
       <DependentUpon>201602100826344_Added TaskStatus added.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201602102011449_minorchange.cs" />
+    <Compile Include="Migrations\201602102011449_minorchange.Designer.cs">
+      <DependentUpon>201602102011449_minorchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602102014492_minorchange1.cs" />
+    <Compile Include="Migrations\201602102014492_minorchange1.Designer.cs">
+      <DependentUpon>201602102014492_minorchange1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ChangeRequestRepository.cs" />
@@ -104,6 +112,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201602100826344_Added TaskStatus added.resx">
       <DependentUpon>201602100826344_Added TaskStatus added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602102011449_minorchange.resx">
+      <DependentUpon>201602102011449_minorchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602102014492_minorchange1.resx">
+      <DependentUpon>201602102014492_minorchange1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
