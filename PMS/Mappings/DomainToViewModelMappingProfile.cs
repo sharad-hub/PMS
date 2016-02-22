@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Core.Entites.Models;
 using PMS.Models;
+using PMS.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace PMS.Mappings
 
         protected override void Configure()
         {
-            Mapper.CreateMap<Tasks,TaskViewModel>();
+            Mapper.CreateMap<Project,ProjectViewModel>();
            // Mapper.CreateMap<Gadget, GadgetViewModel>();
         }
     }

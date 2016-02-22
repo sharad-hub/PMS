@@ -1,0 +1,115 @@
+﻿@model Core.Entites.Models.Resource
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_MetroUILayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Resource</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedByUser.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedByUser.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Designation.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Designation.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedBy.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedBy.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaskRole.RoleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaskRole.RoleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Team.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Team.Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserInfoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserInfoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedOn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedOn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsArchieved)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsArchieved)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

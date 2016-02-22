@@ -29,6 +29,7 @@ namespace PMS
             builder.RegisterControllers(Assembly.GetExecutingAssembly());
             builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerRequest();
             builder.RegisterType<DbFactory>().As<IDbFactory>().InstancePerRequest();
+          //  builder.RegisterType<UserBaseRepository>().As<UserBaseRepository>().InstancePerRequest();
 
             // Repositories
             builder.RegisterAssemblyTypes(typeof(TaskRepository).Assembly)

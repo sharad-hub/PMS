@@ -43,9 +43,7 @@ namespace PMS.Areas.Admin.Controllers
         {
             try
             {
-                _taskService.CreateTask(model);
-                // TODO: Add insert logic here
-
+                _taskService.CreateTask(model);    
                 return RedirectToAction("Index");
             }
             catch
