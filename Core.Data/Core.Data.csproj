@@ -84,11 +84,71 @@
     <Compile Include="Migrations\201602102014492_minorchange1.Designer.cs">
       <DependentUpon>201602102014492_minorchange1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201602181543098_UpdatedBy.cs" />
+    <Compile Include="Migrations\201602181543098_UpdatedBy.Designer.cs">
+      <DependentUpon>201602181543098_UpdatedBy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602181830169_UpdatedBy2.cs" />
+    <Compile Include="Migrations\201602181830169_UpdatedBy2.Designer.cs">
+      <DependentUpon>201602181830169_UpdatedBy2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602191553093_rolegroup.cs" />
+    <Compile Include="Migrations\201602191553093_rolegroup.Designer.cs">
+      <DependentUpon>201602191553093_rolegroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602191853077_added is archved.cs" />
+    <Compile Include="Migrations\201602191853077_added is archved.Designer.cs">
+      <DependentUpon>201602191853077_added is archved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602200433389_added is ProjectTypeId.cs" />
+    <Compile Include="Migrations\201602200433389_added is ProjectTypeId.Designer.cs">
+      <DependentUpon>201602200433389_added is ProjectTypeId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602200505557_added is AplicationUserId.cs" />
+    <Compile Include="Migrations\201602200505557_added is AplicationUserId.Designer.cs">
+      <DependentUpon>201602200505557_added is AplicationUserId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602201752321_new tables_todo_dept_Desig.cs" />
+    <Compile Include="Migrations\201602201752321_new tables_todo_dept_Desig.Designer.cs">
+      <DependentUpon>201602201752321_new tables_todo_dept_Desig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602201855401_alter createdBy.cs" />
+    <Compile Include="Migrations\201602201855401_alter createdBy.Designer.cs">
+      <DependentUpon>201602201855401_alter createdBy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602210646227_added tabel document.cs" />
+    <Compile Include="Migrations\201602210646227_added tabel document.Designer.cs">
+      <DependentUpon>201602210646227_added tabel document.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602210940322_modified team table.cs" />
+    <Compile Include="Migrations\201602210940322_modified team table.Designer.cs">
+      <DependentUpon>201602210940322_modified team table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602211108533_modified resource table.cs" />
+    <Compile Include="Migrations\201602211108533_modified resource table.Designer.cs">
+      <DependentUpon>201602211108533_modified resource table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ChangeRequestRepository.cs" />
+    <Compile Include="Repositories\DepartmentRepository.cs" />
+    <Compile Include="Repositories\DesiginationRepository.cs" />
+    <Compile Include="Repositories\ProjectTypeRepository.cs" />
     <Compile Include="Repositories\ProjectRepository.cs" />
+    <Compile Include="Repositories\TaskTypeRepository.cs" />
+    <Compile Include="Repositories\TaskStatusRepository.cs" />
+    <Compile Include="Repositories\PermissionRepository.cs" />
+    <Compile Include="Repositories\ContactPersonRepository.cs" />
+    <Compile Include="Repositories\ContactTypeRepository.cs" />
+    <Compile Include="Repositories\MileStoneRepository.cs" />
+    <Compile Include="Repositories\ResourceRepository.cs" />
+    <Compile Include="Repositories\RoleRepository.cs" />
+    <Compile Include="Repositories\RoleGroupRepository.cs" />
+    <Compile Include="Repositories\StepManagerRepository.cs" />
+    <Compile Include="Repositories\TaskGroupRepository.cs" />
     <Compile Include="Repositories\TaskRepository.cs" />
+    <Compile Include="Repositories\ToDoRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -118,6 +178,39 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201602102014492_minorchange1.resx">
       <DependentUpon>201602102014492_minorchange1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602181543098_UpdatedBy.resx">
+      <DependentUpon>201602181543098_UpdatedBy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602181830169_UpdatedBy2.resx">
+      <DependentUpon>201602181830169_UpdatedBy2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602191553093_rolegroup.resx">
+      <DependentUpon>201602191553093_rolegroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602191853077_added is archved.resx">
+      <DependentUpon>201602191853077_added is archved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602200433389_added is ProjectTypeId.resx">
+      <DependentUpon>201602200433389_added is ProjectTypeId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602200505557_added is AplicationUserId.resx">
+      <DependentUpon>201602200505557_added is AplicationUserId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602201752321_new tables_todo_dept_Desig.resx">
+      <DependentUpon>201602201752321_new tables_todo_dept_Desig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602201855401_alter createdBy.resx">
+      <DependentUpon>201602201855401_alter createdBy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602210646227_added tabel document.resx">
+      <DependentUpon>201602210646227_added tabel document.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602210940322_modified team table.resx">
+      <DependentUpon>201602210940322_modified team table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602211108533_modified resource table.resx">
+      <DependentUpon>201602211108533_modified resource table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

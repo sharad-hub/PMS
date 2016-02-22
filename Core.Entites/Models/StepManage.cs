@@ -11,7 +11,7 @@ namespace Core.Entites.Models
         public string Name { get; set; }
         public string Controller { get; set; }
         public string Action { get; set; }
-        public virtual ICollection<Role>  AllowedRoles { get; set; }
+        public virtual ICollection<TaskRole>  AllowedRoles { get; set; }
         public virtual ICollection<ChangeRequestType> AllowedCRTypes { get; set; }
         public int OrderOfStep { get; set; }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core.Entites.Models
 {
-  public class Role:BaseEntity
+  public class TaskRole:BaseEntity
     {      
         public String RoleName { get; set; }        
     }

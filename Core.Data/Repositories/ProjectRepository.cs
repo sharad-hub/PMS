@@ -14,7 +14,7 @@ namespace Core.Data.Repositories
 
         public Project GetProjectByName(string projectName)
         {
-            var category = this.DbContext.Projects.Where(c => c.Name == projectName).FirstOrDefault();
+            var category = this.DbContext.Projects.Where(c => c.Name == projectName && c.IsArchieved!=true).FirstOrDefault();
 
             return category;
         }
@@ -22,7 +22,7 @@ namespace Core.Data.Repositories
         public override void Update(Project entity)
         {
             entity.UpdatedOn = DateTime.Now;
-            entity.ModifiedBy = entity.ModifiedBy;
+            //entity.ModifiedBy = entity.ModifiedBy;
             base.Update(entity);
         }
     }

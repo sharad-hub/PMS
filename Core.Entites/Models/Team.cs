@@ -11,13 +11,10 @@ namespace Core.Entites.Models
      public Team()
      {
          Resources = new List<Resource>();
-     }
-       
+     }       
         public string Code { get; set; }
         public string Name { get; set; }
-        public virtual ICollection<Resource> Resources { get; set; }
-        public DateTime CreatedOn { get; set; }
-        public DateTime UpdatedBy { get; set; }
+        public virtual ICollection<Resource> Resources { get; set; }        
         public string Description { get; set; }
     }
 }

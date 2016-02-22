@@ -12,4 +12,8 @@ namespace Core.Entites.Enums
         High=3,
         Urgent=4    
     }
+
+  public enum Urgency
+  {
+  }
 }

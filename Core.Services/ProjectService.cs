@@ -23,7 +23,7 @@ namespace Core.Services
             if (name == null)
                 return projectRepository.GetAll();
             else
-                return projectRepository.GetMany(x => x.Name == name);
+                return projectRepository.GetMany(x => x.Name == name && x.IsArchieved != true);
         }
 
         public Project GetProject(int id)
@@ -39,20 +39,28 @@ namespace Core.Services
         public void UpdateProject(Project entity)
         {
             projectRepository.Update(entity);
+            SaveProject();
         }
 
         public void CreateProject(Project entity)
         {
             projectRepository.Add(entity);
+            SaveProject();
+        }
+        public void SaveProject()
+        {
+            unitOfWork.Commit();
         }
     }
-    interface IProjectService
+    public interface IProjectService
     {
         IEnumerable<Project> GetAllProjects(string name = null);
         Project GetProject(int id);
         Project GetProject(string name);
         void UpdateProject(Project entity);
         void CreateProject(Project entity);
+        void SaveProject();
+
     }
 
 }

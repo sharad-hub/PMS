@@ -8,7 +8,7 @@ namespace Core.Entites.Models
 {
     public class RoleGroup:BaseEntity
     {      
-        public virtual ICollection<Role> Roles { get; set; }
+        public virtual ICollection<TaskRole> Roles { get; set; }
         public string Name { get; set; }
     }
 }

@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 namespace Core.Entites.Models
 {
    public class Resource:BaseEntity
-    {
-        public string Name { get; set; }
+    {       
+        public int? TeamId { get; set; }
         public virtual Team Team { get; set; }
-        public ApplicationUser UserInfo { get; set; }
-        public List<Role> TaskRoles { get; set; }
-        public Role ActualRole { get; set; }
+        public string UserInfoId { get; set; }
+        public virtual ApplicationUser UserInfo { get; set; }
+        public List<TaskRole> TaskRoles { get; set; }
+        public int? TaskRoleId { get; set; }
+        public virtual TaskRole TaskRole { get; set; }
+        public int? DesignationId { get; set; }
+        public virtual Designation Designation { get; set; }
     }
 }

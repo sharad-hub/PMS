@@ -12,7 +12,7 @@ namespace Core.Entites.Models
         public string AreaName { get; set; }
         public string ControllerName { get; set; }
         public string ActionName { get; set; }
-        public virtual List<Role> AllowedRoles { get; set; }
+        public virtual List<TaskRole> AllowedRoles { get; set; }
        // public Lis MyProperty { get; set; }
         public AccessLevel AccessLevel { get; set; }
     }
